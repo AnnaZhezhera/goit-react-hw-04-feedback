@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { AppWrapp } from './App.styled';
 import Statistics from './Statistics/Statistics';
-import FeedbackOptions from './Statistics/FeedbackOptions/FeedbackOptions';
+import FeedbackOptions from './FeedbackOptions/FeedbackOptions';
 
 export class App extends Component {
   state = {
@@ -35,6 +35,7 @@ export class App extends Component {
     return (
       <AppWrapp>
         <FeedbackOptions onLeaveFeedback={this.onLeaveFeedback} />
+
         <Statistics
           good={this.state.good}
           neutral={this.state.neutral}

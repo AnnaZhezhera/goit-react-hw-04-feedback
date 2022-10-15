@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { ButtonForFeedback } from '../FeedbackWidget.styled';
+import { ButtonForFeedback } from '../Statistics/FeedbackWidget.styled';
 
 class FeedbackOptions extends Component {
   static propTypes = {
