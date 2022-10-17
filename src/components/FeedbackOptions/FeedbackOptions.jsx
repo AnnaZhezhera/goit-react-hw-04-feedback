@@ -25,7 +25,16 @@ class FeedbackOptions extends Component {
     return (
       <div className="FeedbackBlock">
         <h3>Please leave feedback</h3>
-        <ButtonForFeedback
+        {Object.keys(this.props.options).map(key => (
+          <ButtonForFeedback
+            type="button"
+            className={key}
+            onClick={this.props.onLeaveFeedback.bind(null, key)}
+          >
+            {this.props.options[key]}
+          </ButtonForFeedback>
+        ))}
+        {/* <ButtonForFeedback
           type="button"
           className="good"
           onClick={this.props.onLeaveFeedback.bind(null, 'good')}
@@ -45,7 +54,7 @@ class FeedbackOptions extends Component {
           onClick={this.props.onLeaveFeedback.bind(null, 'bad')}
         >
           Bad
-        </ButtonForFeedback>
+        </ButtonForFeedback> */}
       </div>
     );
   }
