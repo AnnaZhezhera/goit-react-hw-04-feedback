@@ -1,6 +1,12 @@
 import styled from 'styled-components';
 
+export const ButonsWrapp = styled.div`
+  text-align: center;
+`;
+
 export const ButtonForFeedback = styled.button`
+  width: 60px;
+
   :not(:last-child) {
     margin-right: 10px;
   }

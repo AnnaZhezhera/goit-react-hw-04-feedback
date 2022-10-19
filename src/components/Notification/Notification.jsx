@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+import { NotificationWrapp } from '../Notification/Notification.styled';
 
 class Notification extends Component {
   render() {
     return (
-      <div className="notificationBlock">
-        <p>There is no feedback</p>
-      </div>
+      <NotificationWrapp className="notificationBlock">
+        <p className="notificationText">There is no feedback</p>
+      </NotificationWrapp>
     );
   }
 }
