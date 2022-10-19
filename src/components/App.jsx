@@ -35,7 +35,6 @@ export class App extends Component {
     return (
       <AppWrapp>
         <FeedbackOptions
-          // options={{ good: 'Good', neutral: 'Neutral', bad: 'Bad' }}
           options={Object.keys(this.state)}
           onLeaveFeedback={this.onLeaveFeedback}
         />
