@@ -23,7 +23,7 @@ class FeedbackOptions extends Component {
               className={key}
               onClick={this.props.onLeaveFeedback.bind(null, key)}
             >
-              {key}
+              {key.slice(0, 1).toUpperCase().concat(key.slice(1))}
             </ButtonForFeedback>
           ))}
         </ButonsWrapp>
