@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { SectionWrapp } from '../Section/Section.styled';
 
-export const Section = ({ children, title }) => {
+export default function Section({ children, title }) {
   return (
     <SectionWrapp className="FeedbackBlock">
       <div className="title">
@@ -11,7 +11,7 @@ export const Section = ({ children, title }) => {
       {children}
     </SectionWrapp>
   );
-};
+}
 
 Section.propTypes = {
   children: PropTypes.oneOfType([
